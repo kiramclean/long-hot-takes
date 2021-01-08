@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Long Hot Takes{{# title }} | {{ title }}{{/ title }}</title>
+  <style>
+    html {visibility: hidden; opacity:0;}
+  </style>
+  <link rel="canonical" href="{{meta/root-url}}{{slug}}" />
+  <link rel="stylesheet" href="/assets/normalize.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/assets/styles.css" type="text/css" media="screen" />
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="alternate" href="{{meta/root-url}}/feed.xml" type="application/rss+xml" title="Kira McLean">
+  <script src="https://snake.kiramclean.com/script.js" data-site="EZHCZSEN" defer></script>
+  <script async defer data-domain="kiramclean.com" src="https://analytics.kiramclean.com/js/index.js"></script>
+
+  <meta property="og:title" content="{{# title }}{{ title }}{{/ title }}{{^ title }}Long Hot Takes{{/ title }}">
+  <meta property="og:description" content="{{# title }}{{ description }}{{/ title }}{{^ title }}Medium sized spicy opinions about tech, politics, religion, and the rest of life.{{/ title }}">
+  <meta property="og:url" content="{{meta/root-url}}{{slug}}">
+  <meta property="og:image" content="{{# image }}{{ meta/root-url }}/{{ image }}{{/ image }}{{^ image}}{{ meta/root-url }}/assets/images/logo.png{{/ image }}">
+  <meta property="og:type" content="{{# title }}article{{/ title }}{{^ title }}website{{/ title }}">
+  <meta property="og:site_name" content="Long Hot Takes">
+  <meta name="og:image:alt" content="Long Hot Takes">
+  <meta name="twitter:card" content="summary">
+</head>
+

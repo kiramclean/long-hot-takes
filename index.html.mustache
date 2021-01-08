@@ -1,0 +1,15 @@
+<section>
+  <ul>
+    {{# site/groups }}
+      <h2 id="{{ group/label }}">{{ group/label }}</h2>
+      {{# group/items }}
+        <li>
+				  <time datetime="{{date}}">{{date}}</time>
+				  <div>
+				    <a aria-label="{{title}}" href="{{slug}}">{{title}}</a>
+				  </div>
+				</li>
+      {{/ group/items }}
+    {{/ site/groups }}
+  </ul>
+</section>
